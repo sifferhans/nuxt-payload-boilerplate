@@ -12,6 +12,7 @@ importers:
 
   apps/cms:
     specifiers:
+      '@payloadcms/plugin-seo': ^1.0.10
       '@types/express': ^4.17.9
       copyfiles: ^2.4.1
       cross-env: ^7.0.3
@@ -19,12 +20,15 @@ importers:
       express: ^4.17.1
       nodemon: ^2.0.6
       payload: ^1.6.6
+      payload-blurhash-plugin: ^1.2.0
       ts-node: ^9.1.1
       typescript: ^4.8.4
     dependencies:
+      '@payloadcms/plugin-seo': 1.0.10_payload@1.6.7+react@18.2.0
       dotenv: 8.6.0
       express: 4.18.2
-      payload: 1.6.7_typescript@4.9.5
+      payload: 1.6.7_5e43rfvi4uljebmvbuqpkar2cm
+      payload-blurhash-plugin: 1.2.0_sharp@0.31.3
     devDependencies:
       '@types/express': 4.17.17
       copyfiles: 2.4.1
@@ -1157,22 +1161,24 @@ packages:
       - supports-color
     dev: true
 
-  /@monaco-editor/loader/1.3.2:
+  /@monaco-editor/loader/1.3.2_monaco-editor@0.35.0:
     resolution: {integrity: sha512-BTDbpHl3e47r3AAtpfVFTlAi7WXv4UQ/xZmz8atKl4q7epQV5e7+JbigFDViWF71VBi4IIBdcWP57Hj+OWuc9g==}
     peerDependencies:
       monaco-editor: '>= 0.21.0 < 1'
     dependencies:
+      monaco-editor: 0.35.0
       state-local: 1.0.7
     dev: false
 
-  /@monaco-editor/react/4.4.6_biqbaboplfbrettd7655fr4n2y:
+  /@monaco-editor/react/4.4.6_3vguicescx7w3divwtpzvtv5wy:
     resolution: {integrity: sha512-Gr3uz3LYf33wlFE3eRnta4RxP5FSNxiIV9ENn2D2/rN8KgGAD8ecvcITRtsbbyuOuNkwbuHYxfeaz2Vr+CtyFA==}
     peerDependencies:
       monaco-editor: '>= 0.25.0 < 1'
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@monaco-editor/loader': 1.3.2
+      '@monaco-editor/loader': 1.3.2_monaco-editor@0.35.0
+      monaco-editor: 0.35.0
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -1398,6 +1404,16 @@ packages:
       - vti
       - vue-tsc
     dev: true
+
+  /@payloadcms/plugin-seo/1.0.10_payload@1.6.7+react@18.2.0:
+    resolution: {integrity: sha512-lEcRo/wOACdc2RcqbjLFpsNR/oxrkTW5DskY/mlxspI9DxglPJHyZAr12lxl5aOr8Mn5/bEImTfInRUCnVnpMA==}
+    peerDependencies:
+      payload: ^0.18.5 || ^1.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      payload: 1.6.7_5e43rfvi4uljebmvbuqpkar2cm
+      react: 18.2.0
+    dev: false
 
   /@planetscale/database/1.5.0:
     resolution: {integrity: sha512-Qwh7Or1W5dB5mZ9EQqDkgvkDKhBBmQe58KIVUy0SGocNtr5fP4JAWtvZ6EdLAV6C6hVpzNlCA2xIg9lKTswm1Q==}
@@ -2182,7 +2198,7 @@ packages:
       webpack-cli: 4.x.x
     dependencies:
       webpack: 5.75.0_y3wrihl7uvzhzflzd72e5vvvra
-      webpack-cli: 4.10.0_zfjer5eiwvoit4zaxwbfe5plkm
+      webpack-cli: 4.10.0_webpack@5.75.0
     dev: false
 
   /@webpack-cli/info/1.5.0_webpack-cli@4.10.0:
@@ -2191,7 +2207,7 @@ packages:
       webpack-cli: 4.x.x
     dependencies:
       envinfo: 7.8.1
-      webpack-cli: 4.10.0_zfjer5eiwvoit4zaxwbfe5plkm
+      webpack-cli: 4.10.0_webpack@5.75.0
     dev: false
 
   /@webpack-cli/serve/1.7.0_webpack-cli@4.10.0:
@@ -2203,7 +2219,7 @@ packages:
       webpack-dev-server:
         optional: true
     dependencies:
-      webpack-cli: 4.10.0_zfjer5eiwvoit4zaxwbfe5plkm
+      webpack-cli: 4.10.0_webpack@5.75.0
     dev: false
 
   /@xtuc/ieee754/1.2.0:
@@ -2264,8 +2280,10 @@ packages:
       - supports-color
     dev: true
 
-  /ajv-formats/2.1.1:
+  /ajv-formats/2.1.1_ajv@8.12.0:
     resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
+    peerDependencies:
+      ajv: ^8.0.0
     peerDependenciesMeta:
       ajv:
         optional: true
@@ -2521,6 +2539,10 @@ packages:
       inherits: 2.0.4
       readable-stream: 3.6.0
     dev: true
+
+  /blurhash/2.0.4:
+    resolution: {integrity: sha512-r/As72u2FbucLoK5NTegM/GucxJc3d8GvHc4ngo13IO/nt2HU4gONxNLq1XPN6EM/V8Y9URIa7PcSz2RZu553A==}
+    dev: false
 
   /body-parser/1.20.1:
     resolution: {integrity: sha512-jWi7abTbYwajOytWCQc37VulmWiRae5RyTpaCyDcS5/lMdtwSz5lOpDE67srw/HYe35f1z3fDQw+3txg7gNtWw==}
@@ -2947,7 +2969,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       ajv: 8.12.0
-      ajv-formats: 2.1.1
+      ajv-formats: 2.1.1_ajv@8.12.0
       atomically: 1.7.0
       debounce-fn: 4.0.0
       dot-prop: 6.0.1
@@ -5565,6 +5587,10 @@ packages:
       ufo: 1.0.1
     dev: true
 
+  /monaco-editor/0.35.0:
+    resolution: {integrity: sha512-BJfkAZ0EJ7JgrgWzqjfBNP9hPSS8NlfECEDMEIIiozV2UaPq22yeuOjgbd3TwMh3anH0krWZirXZfn8KUSxiOA==}
+    dev: false
+
   /mongodb-connection-string-url/2.6.0:
     resolution: {integrity: sha512-WvTZlI9ab0QYtTYnuMLgobULWhokRjtC7db9LtcVfJ+Hsnyr5eo6ZtNAt3Ly24XZScGMelOcGtm7lSn0332tPQ==}
     dependencies:
@@ -6274,7 +6300,17 @@ packages:
     resolution: {integrity: sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==}
     dev: false
 
-  /payload/1.6.7_typescript@4.9.5:
+  /payload-blurhash-plugin/1.2.0_sharp@0.31.3:
+    resolution: {integrity: sha512-23HKhoNPrpa1hDqVEeKRCkPEL/AOEa1xjZWhYFgK6vyK/L/WzvBGI3DOHFrhg963s/isbbZOA8D88/TUq+rH4A==}
+    peerDependencies:
+      sharp: 0.x
+    dependencies:
+      blurhash: 2.0.4
+      minimatch: 5.1.6
+      sharp: 0.31.3
+    dev: false
+
+  /payload/1.6.7_5e43rfvi4uljebmvbuqpkar2cm:
     resolution: {integrity: sha512-G2vlemFWe+YKFXOsJuq27xh3RqwjYVMO2Ygq53nIdA0XsI+i2crSt6CxPdx4VWQ4/kXPPemrsNqRz2W9Z6Bbow==}
     engines: {node: '>=14', yarn: '>=1.22 <2'}
     hasBin: true
@@ -6285,7 +6321,7 @@ packages:
       '@faceless-ui/modal': 2.0.1_biqbaboplfbrettd7655fr4n2y
       '@faceless-ui/scroll-info': 1.3.0_biqbaboplfbrettd7655fr4n2y
       '@faceless-ui/window-info': 2.1.1_biqbaboplfbrettd7655fr4n2y
-      '@monaco-editor/react': 4.4.6_biqbaboplfbrettd7655fr4n2y
+      '@monaco-editor/react': 4.4.6_3vguicescx7w3divwtpzvtv5wy
       '@swc/core': 1.3.34
       '@swc/register': 0.1.10_@swc+core@1.3.34
       '@types/sharp': 0.31.1
@@ -6381,11 +6417,11 @@ packages:
       terser-webpack-plugin: 5.3.6_z4awyrd6kcphbx6rxw3yqcwajy
       ts-essentials: 7.0.3_typescript@4.9.5
       url-loader: 4.1.1_p5dl6emkcwslbw72e37w4ug7em
-      use-context-selector: 1.4.1_biqbaboplfbrettd7655fr4n2y
+      use-context-selector: 1.4.1_2szjah6qrhd6fr2kgr64p4pjgm
       uuid: 8.3.2
       webpack: 5.75.0_y3wrihl7uvzhzflzd72e5vvvra
       webpack-bundle-analyzer: 4.7.0
-      webpack-cli: 4.10.0_zfjer5eiwvoit4zaxwbfe5plkm
+      webpack-cli: 4.10.0_webpack@5.75.0
       webpack-dev-middleware: 4.3.0_webpack@5.75.0
       webpack-hot-middleware: 2.25.3
     transitivePeerDependencies:
@@ -7945,7 +7981,7 @@ packages:
     dependencies:
       '@types/json-schema': 7.0.11
       ajv: 8.12.0
-      ajv-formats: 2.1.1
+      ajv-formats: 2.1.1_ajv@8.12.0
       ajv-keywords: 5.1.0_ajv@8.12.0
     dev: false
 
@@ -8933,7 +8969,7 @@ packages:
       webpack: 5.75.0_y3wrihl7uvzhzflzd72e5vvvra
     dev: false
 
-  /use-context-selector/1.4.1_biqbaboplfbrettd7655fr4n2y:
+  /use-context-selector/1.4.1_2szjah6qrhd6fr2kgr64p4pjgm:
     resolution: {integrity: sha512-Io2ArvcRO+6MWIhkdfMFt+WKQX+Vb++W8DS2l03z/Vw/rz3BclKpM0ynr4LYGyU85Eke+Yx5oIhTY++QR0ZDoA==}
     peerDependencies:
       react: '>=16.8.0'
@@ -8948,6 +8984,7 @@ packages:
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      scheduler: 0.23.0
     dev: false
 
   /use-memo-one/1.1.3_react@18.2.0:
@@ -9220,7 +9257,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /webpack-cli/4.10.0_zfjer5eiwvoit4zaxwbfe5plkm:
+  /webpack-cli/4.10.0_webpack@5.75.0:
     resolution: {integrity: sha512-NLhDfH/h4O6UOy+0LSso42xvYypClINuMNBVVzX4vX98TmTaTUxwRbXdhucbFMd2qLaCTcLq/PdYrvi8onw90w==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -9252,7 +9289,6 @@ packages:
       interpret: 2.2.0
       rechoir: 0.7.1
       webpack: 5.75.0_y3wrihl7uvzhzflzd72e5vvvra
-      webpack-bundle-analyzer: 4.7.0
       webpack-merge: 5.8.0
     dev: false
 
@@ -9335,7 +9371,7 @@ packages:
       tapable: 2.2.1
       terser-webpack-plugin: 5.3.6_z4awyrd6kcphbx6rxw3yqcwajy
       watchpack: 2.4.0
-      webpack-cli: 4.10.0_zfjer5eiwvoit4zaxwbfe5plkm
+      webpack-cli: 4.10.0_webpack@5.75.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
       - '@swc/core'
