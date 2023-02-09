@@ -1,6 +1,11 @@
-# Nuxt + Payload monorepo
+# Nuxt + Payload monorepo boilerplate
 
-A monorepo for a website project using Nuxt and Payload.
+A monorepo boilerplate using Nuxt and Payload.
+
+## Why?
+
+I was interested in using Payload as the CMS for a website project with Nuxt, but there were no good examples on how to setup a project with that specific tech stack.
+I found [a pretty nice template](https://github.com/slavanossar/nuxt3-payload-template), but I specifically wanted to use a monorepo setup.
 
 ## Tech stack
 
@@ -31,3 +36,7 @@ pnpm run dev
 ```
 
 This will run both the Nuxt and Payload apps in parallel.
+
+## License
+
+This project is licensed under [MIT](/LICENSE).
