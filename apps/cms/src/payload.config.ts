@@ -3,9 +3,10 @@ import { buildConfig } from 'payload/config';
 import seo from '@payloadcms/plugin-seo'
 import computeBlurhash from 'payload-blurhash-plugin'
 
-import Posts from './collections/Posts';
 import Users from './collections/Users';
 import Media from './collections/Media';
+import Posts from './collections/Posts';
+import Pages from './collections/Pages';
 
 export default buildConfig({
   serverURL: 'http://localhost:3000',
@@ -14,8 +15,9 @@ export default buildConfig({
   },
   collections: [
     Users,
+    Media,
     Posts,
-    Media
+    Pages,
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
@@ -25,7 +27,7 @@ export default buildConfig({
   },
   plugins: [
     seo({
-      collections: ['posts'],
+      collections: ['posts', 'pages'],
       uploadsCollection: 'media',
       generateTitle: ({ doc }) => `Nuxt Payload - ${doc?.title?.value}`,
       generateDescription: ({ doc }) => doc?.excerpt?.value
