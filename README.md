@@ -9,7 +9,7 @@ I found [a pretty nice template](https://github.com/slavanossar/nuxt3-payload-te
 
 ## Tech stack
 
-- [Turborepo](https://turbo.dev/repo)  
+- [Turborepo](https://turbo.build/repo)  
   Makes working with a monorepo a breeze.
 
 - [Nuxt](https://nuxt.com)  
