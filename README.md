@@ -9,13 +9,13 @@ I found [a pretty nice template](https://github.com/slavanossar/nuxt3-payload-te
 
 ## Tech stack
 
-- [Turborepo](https://turbo.build/repo)  
+- <a href="https://turbo.build/repo" target="_blank">Turborepo</a>  
   Makes working with a monorepo a breeze.
 
-- [Nuxt](https://nuxt.com)  
+- <a href="https://nuxt.com" target="_blank">Nuxt</a>  
   Full-stack framework for Vue 3.
 
-- [Payload](https://payloadcms.com)  
+- <a href="https://payloadcms.com" target="_blank">Payload</a>  
   An extensible CMS with great developer experience.
 
 ## Setup
